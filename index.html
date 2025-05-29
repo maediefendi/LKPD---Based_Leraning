@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lembar Kerja Peserta Didik - Bagian Tumbuhan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      background-color: #f0f8ff;
+    }
+    header {
+      background-color: #0d6efd;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    main.container {
+      max-width: 960px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      flex: 1;
+    }
+    .form-label {
+      font-weight: bold;
+    }
+    .hasil {
+      margin-top: 20px;
+    }
+    .benar {
+      color: green;
+      font-weight: bold;
+    }
+    .salah {
+      color: red;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #0d6efd;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="animate__animated animate__fadeInDown">LKPD Digital - Problem Based Learning</h1>
+    <p class="animate__animated animate__fadeInUp">Materi: Bagian-Bagian Tumbuhan</p>
+  </header>
+
+  <main class="container">
+    <div class="mb-4" data-aos="fade-up">
+  <p>Siswa diminta menyampaikan pendapat awal secara kelompok melalui 
+    <a href="https://padlet.com" target="_blank">
+      <button type="button" class="btn btn-success ms-2">Padlet</button>
+    </a>.
+  </p>
+</div>
+
+  <h1 class="text-center mb-4" data-aos="fade-down">Lembar Kerja Peserta Didik</h1>
+<form id="lkpdForm" action="https://formspree.io/f/xqaqrnny" method="POST" data-aos="fade-up">
+  <!-- Optional Redirect -->
+  <input type="hidden" name="_redirect" value="https://example.com/terima-kasih.html">
+
+  <div class="row mb-3">
+    <div class="col-md-6" data-aos="fade-right">
+      <label class="form-label">Kelompok:</label>
+      <input type="text" class="form-control" name="kelompok" required />
+    </div>
+    <div class="col-md-6" data-aos="fade-left">
+      <label class="form-label">Nama Anggota Kelompok:</label>
+      <input type="text" class="form-control mb-1" name="anggota1" placeholder="1." required />
+      <input type="text" class="form-control mb-1" name="anggota2" placeholder="2." />
+      <input type="text" class="form-control mb-1" name="anggota3" placeholder="3." />
+      <input type="text" class="form-control mb-1" name="anggota4" placeholder="4." />
+      <input type="text" class="form-control" name="anggota5" placeholder="5." />
+    </div>
+  </div>
+
+  <div class="mb-4">
+    <h4>Tujuan Pembelajaran</h4>
+    <ul>
+      <li>Peserta didik dapat mengidentifikasi bagian-bagian tubuh dari tumbuhan.</li>
+      <li>Peserta didik dapat memahami fungsi dari masing-masing bagian tubuh tumbuhan.</li>
+    </ul>
+  </div>
+
+  <div class="mb-4">
+    <h4>1. Lengkapi nama-nama bagian tubuh tumbuhan berikut</h4>
+    <div class="text-center mb-3">
+      <img src="./Asset/WhatsApp Image 2025-05-29 at 08.27.19.jpeg" alt="Gambar tumbuhan" class="img-fluid" />
+    </div>
+    <input type="text" class="form-control mb-2" name="bagian1" placeholder="Bagian 1 (misal: bunga)" required data-aos="fade-up" data-aos-delay="100" />
+    <input type="text" class="form-control mb-2" name="bagian2" placeholder="Bagian 2" required data-aos="fade-up" data-aos-delay="200" />
+    <input type="text" class="form-control mb-2" name="bagian3" placeholder="Bagian 3" required data-aos="fade-up" data-aos-delay="300" />
+    <input type="text" class="form-control mb-2" name="bagian4" placeholder="Bagian 4" required data-aos="fade-up" data-aos-delay="400" />
+    <input type="text" class="form-control" name="bagian5" placeholder="Bagian 5" required data-aos="fade-up" data-aos-delay="500" />
+  </div>
+
+  <div class="mb-4">
+    <h4>2. Hubungkan bagian tumbuhan dengan fungsinya</h4>
+
+    <div class="mb-2" data-aos="fade-up" data-aos-delay="100">
+      <label class="form-label">Bunga:</label>
+      <input type="text" class="form-control" name="fungsi1" required />
+    </div>
+
+    <div class="mb-2" data-aos="fade-up" data-aos-delay="200">
+      <label class="form-label">Daun:</label>
+      <input type="text" class="form-control" name="fungsi2" required />
+    </div>
+
+    <div class="mb-2" data-aos="fade-up" data-aos-delay="300">
+      <label class="form-label">Akar:</label>
+      <input type="text" class="form-control" name="fungsi3" required />
+    </div>
+
+    <div class="mb-2" data-aos="fade-up" data-aos-delay="400">
+      <label class="form-label">Buah:</label>
+      <input type="text" class="form-control" name="fungsi4" required />
+    </div>
+
+    <div class="mb-2" data-aos="fade-up" data-aos-delay="500">
+      <label class="form-label">Batang:</label>
+      <input type="text" class="form-control" name="fungsi5" required />
+    </div>
+  </div>
+
+  <div class="text-center mt-3" data-aos="zoom-in-up" data-aos-delay="600">
+    <button type="button" class="btn btn-success me-2" onclick="periksaJawaban()">Periksa Jawaban</button>
+    <button type="submit" class="btn btn-primary">Kirim Jawaban</button>
+  </div>
+
+  <div class="mt-5" data-aos="fade-up">
+  <h5 class="text-success">
+    🌱 Kuis Interaktif: Bagian Tumbuhan
+  </h5>
+  <p>Pilih nama bagian tumbuhan yang sesuai dengan posisi tanda panah.</p>
+
+  <form id="kuisTumbuhan">
+    <ol>
+      <li>
+        <label>Bagian atas (berwarna hijau):</label><br>
+        <select name="bagian1">
+          <option value="">-- Pilih jawaban --</option>
+          <option value="akar">akar</option>
+          <option value="batang">batang</option>
+          <option value="daun">daun</option>
+          <option value="bunga">bunga</option>
+          <option value="buah">buah</option>
+        </select>
+      </li>
+      <li>
+        <label>Bagian dengan kelopak putih:</label><br>
+        <select name="bagian2">
+          <option value="">-- Pilih jawaban --</option>
+          <option value="akar">akar</option>
+          <option value="batang">batang</option>
+          <option value="daun">daun</option>
+          <option value="bunga">bunga</option>
+          <option value="buah">buah</option>
+        </select>
+      </li>
+      <li>
+        <label>Bagian panjang tegak:</label><br>
+        <select name="bagian3">
+          <option value="">-- Pilih jawaban --</option>
+          <option value="akar">akar</option>
+          <option value="batang">batang</option>
+          <option value="daun">daun</option>
+          <option value="bunga">bunga</option>
+          <option value="buah">buah</option>
+        </select>
+      </li>
+      <li>
+        <label>Bagian merah dengan biji:</label><br>
+        <select name="bagian4">
+          <option value="">-- Pilih jawaban --</option>
+          <option value="akar">akar</option>
+          <option value="batang">batang</option>
+          <option value="daun">daun</option>
+          <option value="bunga">bunga</option>
+          <option value="buah">buah</option>
+        </select>
+      </li>
+      <li>
+        <label>Bagian bawah dalam tanah:</label><br>
+        <select name="bagian5">
+          <option value="">-- Pilih jawaban --</option>
+          <option value="akar">akar</option>
+          <option value="batang">batang</option>
+          <option value="daun">daun</option>
+          <option value="bunga">bunga</option>
+          <option value="buah">buah</option>
+        </select>
+      </li>
+    </ol>
+    <button type="button" class="btn btn-primary" onclick="cekJawaban()">Periksa Jawaban</button>
+  </form>
+
+  <div id="hasilKuis" class="mt-3"></div>
+</div>
+
+<script>
+  function cekJawaban() {
+    const form = document.forms['kuisTumbuhan'];
+    const kunci = ['daun', 'bunga', 'batang', 'buah', 'akar'];
+    let benar = 0;
+
+    for (let i = 1; i <= 5; i++) {
+      if (form['bagian' + i].value === kunci[i - 1]) {
+        benar++;
+      }
+    }
+
+    const hasil = document.getElementById("hasilKuis");
+    hasil.innerHTML = `<div class="alert alert-${benar === 5 ? 'success' : 'warning'}">Jawaban benar: ${benar} dari 5</div>`;
+  }
+</script>
+
+
+  <div class="mt-5" data-aos="fade-up">
+  <h5 class="text-success">
+    <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="PDF Icon" width="24" style="margin-right: 8px;" />
+    Unduh LKPD PDF
+  </h5>
+  <a href="Asset/Friska_Widiyaningsih_IPASS.pdf" download>
+  <button class="btn btn-success mt-2">Unduh LKPD</button>
+</a>
+
+</div>
+
+
+
+  <div class="hasil mt-4" id="hasil"></div>
+</form>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Modul Ajar. Dikembangkan untuk pembelajaran interaktif oleh Guru Digital Indonesia.</p>
+    </div>
+  </footer>
+
+  <!-- Script AOS dan Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  <!-- Script Periksa Jawaban -->
+  <script>
+    function periksaJawaban() {
+      const form = document.getElementById('lkpdForm');
+      const formData = new FormData(form);
+
+      const bagianJawaban = [
+        formData.get('bagian1')?.toLowerCase() || '',
+        formData.get('bagian2')?.toLowerCase() || '',
+        formData.get('bagian3')?.toLowerCase() || '',
+        formData.get('bagian4')?.toLowerCase() || '',
+        formData.get('bagian5')?.toLowerCase() || ''
+      ];
+
+      const fungsiJawaban = [
+        formData.get('fungsi1')?.toLowerCase() || '',
+        formData.get('fungsi2')?.toLowerCase() || '',
+        formData.get('fungsi3')?.toLowerCase() || '',
+        formData.get('fungsi4')?.toLowerCase() || '',
+        formData.get('fungsi5')?.toLowerCase() || ''
+      ];
+
+      const kunciBagian = ['bunga', 'daun', 'batang', 'buah', 'akar'];
+      const kunciFungsi = {
+        bunga: 'alat perkembangbiakan',
+        daun: 'fotosintesis',
+        akar: 'penyerapan air dan zat hara',
+        buah: 'tempat melindungi biji',
+        batang: 'alat transportasi'
+      };
+
+      let hasilHTML = "<h5>Hasil:</h5>";
+
+      bagianJawaban.forEach((jwb, i) => {
+        hasilHTML += `<p>Bagian ${i + 1}: ${jwb === kunciBagian[i] ? '<span class="benar">Benar</span>' : '<span class="salah">Salah</span> (Jawaban: ' + kunciBagian[i] + ')'}</p>`;
+      });
+
+      Object.keys(kunciFungsi).forEach((bagian, i) => {
+        const jwb = fungsiJawaban[i];
+        hasilHTML += `<p>${bagian.charAt(0).toUpperCase() + bagian.slice(1)}: ${jwb === kunciFungsi[bagian] ? '<span class="benar">Benar</span>' : '<span class="salah">Salah</span> (Jawaban: ' + kunciFungsi[bagian] + ')'}</p>`;
+      });
+
+      document.getElementById('hasil').innerHTML = hasilHTML;
+    }
+  </script>
+</body>
+</html>
