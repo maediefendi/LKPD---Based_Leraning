@@ -143,74 +143,82 @@
   </div>
 
   <div class="mt-5" data-aos="fade-up">
-  <h5 class="text-success">
-    🌱 Kuis Interaktif: Bagian Tumbuhan
-  </h5>
-  <p>Pilih nama bagian tumbuhan yang sesuai dengan posisi tanda panah.</p>
+  <div class="card shadow-sm rounded-4">
+    <div class="card-body">
+      <h5 class="text-success mb-3">
+        🌱 <span class="badge bg-success text-white">Kuis Interaktif</span> Bagian Tumbuhan
+      </h5>
+      <p class="mb-4">Pilih nama bagian tumbuhan yang sesuai dengan posisi tanda panah.</p>
 
-  <form id="kuisTumbuhan">
-    <ol>
-      <li>
-        <label>Bagian atas (berwarna hijau):</label><br>
-        <select name="bagian1">
-          <option value="">-- Pilih jawaban --</option>
-          <option value="akar">akar</option>
-          <option value="batang">batang</option>
-          <option value="daun">daun</option>
-          <option value="bunga">bunga</option>
-          <option value="buah">buah</option>
-        </select>
-      </li>
-      <li>
-        <label>Bagian dengan kelopak putih:</label><br>
-        <select name="bagian2">
-          <option value="">-- Pilih jawaban --</option>
-          <option value="akar">akar</option>
-          <option value="batang">batang</option>
-          <option value="daun">daun</option>
-          <option value="bunga">bunga</option>
-          <option value="buah">buah</option>
-        </select>
-      </li>
-      <li>
-        <label>Bagian panjang tegak:</label><br>
-        <select name="bagian3">
-          <option value="">-- Pilih jawaban --</option>
-          <option value="akar">akar</option>
-          <option value="batang">batang</option>
-          <option value="daun">daun</option>
-          <option value="bunga">bunga</option>
-          <option value="buah">buah</option>
-        </select>
-      </li>
-      <li>
-        <label>Bagian merah dengan biji:</label><br>
-        <select name="bagian4">
-          <option value="">-- Pilih jawaban --</option>
-          <option value="akar">akar</option>
-          <option value="batang">batang</option>
-          <option value="daun">daun</option>
-          <option value="bunga">bunga</option>
-          <option value="buah">buah</option>
-        </select>
-      </li>
-      <li>
-        <label>Bagian bawah dalam tanah:</label><br>
-        <select name="bagian5">
-          <option value="">-- Pilih jawaban --</option>
-          <option value="akar">akar</option>
-          <option value="batang">batang</option>
-          <option value="daun">daun</option>
-          <option value="bunga">bunga</option>
-          <option value="buah">buah</option>
-        </select>
-      </li>
-    </ol>
-    <button type="button" class="btn btn-primary" onclick="cekJawaban()">Periksa Jawaban</button>
-  </form>
+      <form id="kuisTumbuhan">
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item">
+            <label class="fw-semibold">Bagian atas (berwarna hijau):</label>
+            <select name="bagian1" class="form-select mt-2">
+              <option value="">-- Pilih jawaban --</option>
+              <option value="akar">akar</option>
+              <option value="batang">batang</option>
+              <option value="daun">daun</option>
+              <option value="bunga">bunga</option>
+              <option value="buah">buah</option>
+            </select>
+          </li>
+          <li class="list-group-item">
+            <label class="fw-semibold">Bagian dengan kelopak putih:</label>
+            <select name="bagian2" class="form-select mt-2">
+              <option value="">-- Pilih jawaban --</option>
+              <option value="akar">akar</option>
+              <option value="batang">batang</option>
+              <option value="daun">daun</option>
+              <option value="bunga">bunga</option>
+              <option value="buah">buah</option>
+            </select>
+          </li>
+          <li class="list-group-item">
+            <label class="fw-semibold">Bagian panjang tegak:</label>
+            <select name="bagian3" class="form-select mt-2">
+              <option value="">-- Pilih jawaban --</option>
+              <option value="akar">akar</option>
+              <option value="batang">batang</option>
+              <option value="daun">daun</option>
+              <option value="bunga">bunga</option>
+              <option value="buah">buah</option>
+            </select>
+          </li>
+          <li class="list-group-item">
+            <label class="fw-semibold">Bagian merah dengan biji:</label>
+            <select name="bagian4" class="form-select mt-2">
+              <option value="">-- Pilih jawaban --</option>
+              <option value="akar">akar</option>
+              <option value="batang">batang</option>
+              <option value="daun">daun</option>
+              <option value="bunga">bunga</option>
+              <option value="buah">buah</option>
+            </select>
+          </li>
+          <li class="list-group-item">
+            <label class="fw-semibold">Bagian bawah dalam tanah:</label>
+            <select name="bagian5" class="form-select mt-2">
+              <option value="">-- Pilih jawaban --</option>
+              <option value="akar">akar</option>
+              <option value="batang">batang</option>
+              <option value="daun">daun</option>
+              <option value="bunga">bunga</option>
+              <option value="buah">buah</option>
+            </select>
+          </li>
+        </ol>
 
-  <div id="hasilKuis" class="mt-3"></div>
+        <div class="text-center mt-4">
+          <button type="button" class="btn btn-primary px-4" onclick="cekJawaban()">Periksa Jawaban</button>
+        </div>
+      </form>
+
+      <div id="hasilKuis" class="mt-4"></div>
+    </div>
+  </div>
 </div>
+
 
 <script>
   function cekJawaban() {
